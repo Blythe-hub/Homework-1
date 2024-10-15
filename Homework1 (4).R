@@ -8,7 +8,7 @@ approved_bonds <- sum(bonds$Result == "Carried")
 defeated_bonds <- sum(bonds$Result == "Defeated")
 
 # Calculate the approval rate by government type
-approval_rate_by_type <- prop.table(table(bonds$Result, bonds$Type), margin = 2)
+approval_rate_by_type <- prop.table(table(bonds$Result, bonds$Type), margin = 3)
 
 # Print results
 approved_bonds
